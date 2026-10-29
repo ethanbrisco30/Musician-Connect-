@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Musician Connect helps musicians discover opportunities, meet collaborators, and grow through community.">
+  <title>Musician Connect | Connect Through Music</title>
+
+  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="w3-bar site-nav w3-padding">
+      <a class="brand w3-bar-item w3-button" href="index.html" aria-label="Musician Connect home">
+        <img src="images/musician-connect-logo-transparent.png" alt="" class="brand-logo">
+        <span class="brand-name">Musician <span>Connect</span></span>
+      </a>
+
+      <nav class="desktop-nav w3-right" aria-label="Main navigation">
+        <a class="w3-bar-item w3-button nav-link current-page" href="index.html" aria-current="page">Home</a>
+        <a class="w3-bar-item w3-button nav-link" href="find-musicians.html">Find Musicians</a>
+        <a class="w3-bar-item w3-button nav-link" href="opportunities.html">Opportunities</a>
+        <a class="w3-bar-item w3-button nav-link" href="about.html">About</a>
+        <a class="w3-bar-item w3-button nav-link" href="contact.html">Contact</a>
+        <a class="w3-bar-item w3-button sign-in-button" href="sign-in.html">Sign In</a>
+      </nav>
+
+      <button class="mobile-menu-button w3-button w3-right" type="button"
+              aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-navigation"
+              onclick="toggleMobileMenu()">☰</button>
+    </div>
+
+    <nav id="mobile-navigation" class="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="find-musicians.html">Find Musicians</a>
+      <a href="opportunities.html">Opportunities</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="sign-in.html">Sign In</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      
+      <div class="hero-slide slide-one" role="img" aria-label="Ethan Drums"></div>
+      <div class="hero-slide slide-two" role="img" aria-label="Second background photo for the slideshow"></div>
+      <div class="hero-slide slide-three" role="img" aria-label="Third background photo for the slideshow"></div>
+      <div class="hero-shade"></div>
+
+      <div class="hero-content w3-container">
+        <img
+          src="images/musician-connect-logo-transparent.png"
+           alt="Musician Connect MC logo"
+          class="hero-logo">
+        <p class="eyebrow">CONNECT · COLLABORATE · GROW</p>
+        <h1 id="hero-title">Welcome to <span>Musician Connect</span></h1>
+        <p class="hero-slogan">Connect Through Music. Grow Through Community.</p>
+        <p class="hero-description">Meet musicians, discover opportunities, and find people who share your passion for music.</p>
+        <div class="hero-actions">
+          <a class="w3-button primary-button w3-round" href="find-musicians.html">Find Musicians</a>
+          <a class="w3-button secondary-button w3-round" href="opportunities.html">Explore Opportunities</a>
+        </div>
+        <div class="slide-indicator" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
+    </section>
+
+    <section class="profile-cta" aria-labelledby="profile-title">
+      <div class="w3-container cta-inner">
+        <div>
+          <p class="eyebrow">TAKE THE FIRST STEP</p>
+          <h2 id="profile-title">Create Your Profile in Simple Steps</h2>
+          <p>Introduce yourself, list your instruments and experience, and get ready to connect.</p>
+        </div>
+        <a class="w3-button primary-button w3-round" href="sign-in.html">Get Started</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="w3-container w3-padding-32">
+      <div class="w3-row-padding">
+        <div class="w3-half footer-brand-column">
+          <div class="footer-brand">
+            <img src="images/musician-connect-logo-transparent.png" alt="" class="footer-logo">
+            <span>Musician Connect</span>
+          </div>
+          <p class="footer-slogan">Connect Through Music. Grow Through Community.</p>
+          <p class="footer-description">Bringing musicians together to discover opportunities, collaborate, and grow.</p>
+        </div>
+        <div class="w3-quarter">
+          <h2 class="footer-heading">Quick Links</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="find-musicians.html">Find Musicians</a></li>
+            <li><a href="opportunities.html">Opportunities</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="w3-quarter">
+          <h2 class="footer-heading">Connect</h2>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="sign-in.html">Sign In</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Musician Connect. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById("mobile-navigation");
+      const button = document.querySelector(".mobile-menu-button");
+      const isOpen = menu.classList.toggle("mobile-nav-open");
+      button.setAttribute("aria-expanded", String(isOpen));
+      button.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+    }
+  </script>
+</body>
+</html>
